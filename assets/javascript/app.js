@@ -1,36 +1,73 @@
 
-var = []
+// $(document).ready(function() {
 
-      function renderButtons() {
+// var series = ["Shameless", "Game Of Thrones", "The Office", "Stranger Things"];
 
-  
-        $("#buttons-view").empty();
-
-        for (var i = 0; i < movies.length; i++) {
-
-          var a = $("<button>");  
-          a.addClass("movie");  
-          a.attr("data-name", movies[i]);
-          a.text(movies[i]);
-
-          $("#buttons-view").append(a);
-        }
-      }
-
-      $("#add-movie").on("click", function(event) {
-        event.preventDefault();
-
-        var movie = $("#movie-input").val().trim();
-
-        movies.push(movie);
+// function alertMovieName() {
+//     console.log(this);
+//     console.log("*****");
+//     // YOUR CODE GOES HERE!!!
+//     console.log($(this));
+//     console.log("*****");
+//      alert($(this).text());
+//   }
 
 
-        renderButtons();
+//       function renderButtons() {
+//         $("#series-buttons").empty();
+
+//         for (var i = 0; i < series.length; i++) {
+
+//           var seriesButton = $("<button>");  
+//           seriesButton.text(seriesAdd[i]);
+//           seriesButton.addClass("seriesAdd");  
+//           seriesButton.attr("data-name", seriesAdd[i]);
+//           $("#series-buttons").append(seriesButton);
+//           console.log(seriesButton);
+//           console.log("********")
+
+//           renderButtons();
+//         }
+//       }
+
+//       $("#add-series").on("click", function(event) {
+//         event.preventDefault();
+
+//         var show = $("#series-input").val().trim();
+
+//         $(series).push(seriesAdd);
+//         renderButtons();
 
         
-      });
+//       });
 
-      $(document).on("click", ".movie", alertMovieName);
 
-      // Calling the renderButtons function to display the intial buttons
-      renderButtons();
+     
+//         function submitButtonClicked() {
+//             var userInput = $('#series-input').val();
+        
+//             if (userInput) {
+//                 $('#series-buttons').append("<button type='button' onclick='searchGif(\"" + userInput + "\")' class='btn btn-primary' value=' " + userInput + "'> " + userInput + " </button>");
+//             }
+//         }
+
+//       });
+
+
+    //   $(document).on("click", ".movie", alertMovieName);
+
+    //   // Calling the renderButtons function to display the intial buttons
+    //   renderButtons();
+
+
+    var showTitle = ['The Office', 'Game of Thrones','The Walking Dead','DareDevil'];
+
+
+//creates buttons
+function createButtons(){
+	$('#TVButtons').empty();
+	for(var i = 0; i < showTitle.length; i++){
+		var showBtn = $('<button>').text(showTitle[i]).addClass('showBtn').attr({'data-name': showTitle[i]});
+		$('#TVButtons').append(showBtn);
+	}
+
