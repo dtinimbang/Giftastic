@@ -1,78 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="utf-8">
-  <title>GIPHY</title>
-  <style type="text/css">
-    button,
-    div,
-    form,
-    input {
-      margin: 10px;
-    }
-  </style>
+    <title>Fitness</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
 </head>
 
-
-
-
-     <!-- Bootstrap CSS -->
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-     <!-- <link rel="stylesheet" type="text/css" href="assets/css/style.css"> -->
-     <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
- </head>
- <body>
-        <!-- <div class="container">
-                <h1>Giphy Search</h1>
-            
-                <-- Movies will get dumped here -->
-                <!-- <div id="series-view"></div>
-            
-                <form id="series-form">
-                  <label for="series-input">Add a Movie Bro</label>
-                  <input type="text" id="series-input">
-                  <br> -->
-            
-                  <!-- Button triggers new movie to be added -->
-                  <!-- <input id="series-input" type="submit" value="GIPHY TIME">
-                </form> --> -->
-
-
-
-    <div class="container" style="background: transparent;">
-     <h1 class="text-center">Favorite Series</h1>
-        <br>
-        <br>
-        <div id="series-buttons"> </div>
-        <br>
-        <br>
-        <div class="container" id="btn" style="background: transparent;">
-            <form id="series-form">
-                <label id="add" for="series-input1">Enter and Search your favorite Series</label>
-                <input type="text" class="form-control" id="series-input">
-                <br>
-                <br>
-            <input id="add-series" type="submit" value="CLICK ME">
-            </form>
- 
-            <br>
-            <br>
-            <div id="series"> </div>
+<body>
+    <div class='container'>
+        <div class='row'>
+            <div id='fitButton'></div>
         </div>
-    </div> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src= "assets/javascript/app.js"></script>
-</body>
-
-
+        <div class='row'>
+            <div class='col-lg-9'>
+                <div class='display'></div>
+            </div>
+            <div class='col-lg-3'>
+                <form id='TV-form'>
+                    <label for='newMoveInput'>Add your favorite Lifting movements</label>
+                    <input type='text' id='newMoveInput'>
+                    <br>
+                    <input id='addmovement' type='submit' value='What movements do you want to see'>
+                </form>
+            </div class = "moveBtn"></div>
+        </div>
+    </div>
     
-
-
-
-
-</script>
-  </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
 </body>
 
 </html>
