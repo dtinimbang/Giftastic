@@ -21,7 +21,7 @@ function createButtons() {
         });
         $('#fitButton').append(fitnessBtn);
     }
-    createButtons();
+  
 
     //displays gifs on click
     $('.fitnessBtn').on('click', function () {
